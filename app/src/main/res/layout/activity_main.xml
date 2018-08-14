@@ -6,13 +6,67 @@
     android:layout_height="match_parent"
     tools:context=".screen.main.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height"
+        android:background="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout_playing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_tab">
+
+    </android.support.v4.view.ViewPager>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout_playing"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/playing_height"
+        android:background="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/playing_text_marginstart"
+            android:layout_marginTop="@dimen/playing_item_margintop"
+            android:text="@string/song_name"
+            android:textColor="@color/playing_textColor"
+            android:textSize="@dimen/playing_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/button_MainPlayPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/playing_button_marginend"
+            android:layout_marginTop="@dimen/playing_item_margintop"
+            android:background="@drawable/ic_play_arrow_black_24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="@dimen/divider_width"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/divider_marginTopBottom"
+            android:layout_marginEnd="@dimen/divider_marginStartEnd"
+            android:layout_marginStart="@dimen/divider_marginStartEnd"
+            android:layout_marginTop="@dimen/divider_marginTopBottom"
+            android:background="@color/playing_divider"
+            app:layout_constraintEnd_toStartOf="@+id/button_MainPlayPause"
+            app:layout_constraintHorizontal_bias="0.886"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>

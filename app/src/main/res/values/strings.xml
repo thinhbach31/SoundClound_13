@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">S-Cloud</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="exit">Exit</string>
+    <string name="stream">Stream</string>
+    <string name="genre">Genre</string>
+    <string name="library">Library</string>
+    <string name="song_name">Song name</string>
 </resources>
