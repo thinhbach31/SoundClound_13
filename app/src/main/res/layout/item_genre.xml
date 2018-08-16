@@ -11,7 +11,8 @@
         android:layout_height="@dimen/genre_item_height"
         android:background="@color/color_material_purple_600"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text_genre_name"

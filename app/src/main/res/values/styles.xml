@@ -8,4 +8,10 @@
         <item name="colorAccent">@color/color_accent</item>
     </style>
 
+    <style name="image_button">
+        <item name="android:layout_height">@dimen/image_button_size</item>
+        <item name="android:layout_width">@dimen/image_button_size</item>
+
+    </style>
+
 </resources>
