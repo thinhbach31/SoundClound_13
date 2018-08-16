@@ -4,15 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.example.admin.scloud.screen.main.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <FrameLayout
+        android:id="@+id/frame_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraint_playing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraint_playing"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/playing_height"
+        android:background="@color/color_primary"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:id="@+id/text_song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/playing_text_marginstart"
+            android:layout_marginTop="@dimen/playing_item_margintop"
+            android:text="@string/title_song_name"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/playing_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/button_main_change_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/playing_button_marginend"
+            android:layout_marginTop="@dimen/playing_item_margintop"
+            android:background="@drawable/ic_play_arrow_black_24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="@dimen/divider_width"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/divider_marginTopBottom"
+            android:layout_marginEnd="@dimen/divider_marginStartEnd"
+            android:layout_marginStart="@dimen/divider_marginStartEnd"
+            android:layout_marginTop="@dimen/divider_marginTopBottom"
+            android:background="@color/color_material_yellow_800"
+            app:layout_constraintEnd_toStartOf="@+id/button_main_change_state"
+            app:layout_constraintHorizontal_bias="0.886"
+            app:layout_constraintStart_toEndOf="@+id/text_song_name"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>
