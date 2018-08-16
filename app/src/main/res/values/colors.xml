@@ -5,4 +5,6 @@
     <color name="color_accent">#FF4081</color>
     <color name="color_material_yellow_800">#e7a438</color>
     <color name="color_black">#000000</color>
+    <color name="color_white">#fff</color>
+    <color name="color_material_purple_600">#8e24aa</color>
 </resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_view_height">41dp</dimen>
+    <dimen name="text_size_genre">30sp</dimen>
+    <dimen name="genre_item_height">155dp</dimen>
+</resources>
