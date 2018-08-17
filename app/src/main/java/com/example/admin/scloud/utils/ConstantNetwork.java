@@ -1,4 +1,4 @@
-package com.example.admin.scloud.screen.utils;
+package com.example.admin.scloud.utils;
 
 public class ConstantNetwork {
     private ConstantNetwork() {
