@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/genre_item_height"
         android:background="@color/color_material_purple_600"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp"
         tools:ignore="MissingConstraints" />
