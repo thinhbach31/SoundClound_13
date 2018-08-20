@@ -1,6 +1,6 @@
-package com.example.admin.scloud.screen.data.source;
+package com.example.admin.scloud.data.source;
 
-import com.example.admin.scloud.screen.data.model.Track;
+import com.example.admin.scloud.data.model.Track;
 
 import java.util.List;
 

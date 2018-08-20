@@ -1,4 +1,4 @@
-package com.example.admin.scloud.screen.data.model;
+package com.example.admin.scloud.data.model;
 
 public class Artist {
     private String mName;

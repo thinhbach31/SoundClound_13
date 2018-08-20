@@ -1,11 +1,11 @@
-package com.example.admin.scloud.screen.data.source.remote;
+package com.example.admin.scloud.data.source.remote;
 
 import android.os.AsyncTask;
 
-import com.example.admin.scloud.screen.data.model.Track;
-import com.example.admin.scloud.screen.data.source.TrackDataSource;
-import com.example.admin.scloud.screen.utils.ConstantNetwork;
-import com.example.admin.scloud.screen.utils.ConstantString;
+import com.example.admin.scloud.data.model.Track;
+import com.example.admin.scloud.data.source.TrackDataSource;
+import com.example.admin.scloud.utils.ConstantNetwork;
+import com.example.admin.scloud.utils.ConstantString;
 
 import org.json.JSONArray;
 import org.json.JSONException;

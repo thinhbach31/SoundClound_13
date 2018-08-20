@@ -1,7 +1,7 @@
-package com.example.admin.scloud.screen.data.source.remote;
+package com.example.admin.scloud.data.source.remote;
 
-import com.example.admin.scloud.screen.data.model.Track;
-import com.example.admin.scloud.screen.data.source.TrackDataSource;
+import com.example.admin.scloud.data.model.Track;
+import com.example.admin.scloud.data.source.TrackDataSource;
 
 import org.json.JSONException;
 import org.json.JSONObject;
