@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height">
+
+    <ImageView
+        android:id="@+id/image_local_song"
+        android:layout_width="@dimen/image_song_size"
+        android:layout_height="@dimen/image_song_size"
+        android:layout_marginBottom="@dimen/divider_marginStartEnd"
+        android:layout_marginStart="@dimen/divider_marginStartEnd"
+        android:layout_marginTop="@dimen/divider_marginStartEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#b600ce"/>
+
+    <TextView
+        android:id="@+id/text_songname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/divider_marginStartEnd"
+        android:layout_marginTop="@dimen/text_margin_top"
+        android:textSize="@dimen/playing_text_size"
+        android:text="@string/title_song_name"
+        app:layout_constraintStart_toEndOf="@+id/image_local_song"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_local_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/divider_marginStartEnd"
+        android:text="@string/title_artist_name"
+        app:layout_constraintStart_toEndOf="@+id/image_local_song"
+        app:layout_constraintTop_toBottomOf="@+id/text_songname" />
+    <TextView
+        android:id="@+id/text_likecount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/divider_marginStartEnd"
+        android:text="@string/title_like_count"
+        app:layout_constraintStart_toEndOf="@+id/image_local_song"
+        app:layout_constraintTop_toBottomOf="@+id/text_local_artist" />
+
+    <ImageButton
+        android:id="@+id/image_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/divider_marginStartEnd"
+        android:layout_marginEnd="@dimen/divider_marginStartEnd"
+        android:layout_marginTop="@dimen/divider_marginStartEnd"
+        android:background="@drawable/ic_if_download2_172461"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/color_blue_grey_600"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+</android.support.constraint.ConstraintLayout>

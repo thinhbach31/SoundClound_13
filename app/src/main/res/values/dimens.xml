@@ -11,4 +11,13 @@
     <dimen name="dp_4">4dp</dimen>
     <dimen name="dp_075">0.75dp</dimen>
     <dimen name="dp_2">2dp</dimen>
+
+    <!--item genre-->
+    <dimen name="image_song_size">70dp</dimen>
+    <dimen name="text_margin_top">16dp</dimen>
+    <dimen name="divider_height">0.5dp</dimen>
+
+    <!--item song-->
+    <dimen name="item_height">100dp</dimen>
+
 </resources>
