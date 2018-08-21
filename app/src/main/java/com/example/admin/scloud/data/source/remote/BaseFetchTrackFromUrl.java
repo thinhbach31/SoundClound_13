@@ -58,7 +58,7 @@ public abstract class BaseFetchTrackFromUrl extends AsyncTask<String, Void, List
         ArrayList<Track> trackArrayList = new ArrayList<>();
         JSONArray jsonCollection = jsonObject.getJSONArray(Track.TrackEntity.COLLECTION);
         for (int i = 0; i < jsonCollection.length(); i++) {
-            JSONObject jsonTrack = getJsonTrack(jsonCollection.getJSONObject(i));
+            JSONObject jsonTrack = jsonCollection.getJSONObject(i);
             Track track = parseJsonObjectToTrackObject(jsonTrack);
             if (track != null) {
                 trackArrayList.add(track);
@@ -67,12 +67,9 @@ public abstract class BaseFetchTrackFromUrl extends AsyncTask<String, Void, List
         return trackArrayList;
     }
 
-    protected abstract JSONObject getJsonTrack(JSONObject jsonOøbject) throws JSONException;
-
     private String getJSONStringFromURL(String urlString) throws IOException {
         URL url = new URL(urlString);
         HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
-
         httpURLConnection.setRequestMethod(ConstantNetwork.REQUEST_METHOD_GET);
         httpURLConnection.setReadTimeout(ConstantNetwork.READ_TIME_OUT);
         httpURLConnection.setConnectTimeout(ConstantNetwork.CONNECT_TIME_OUT);

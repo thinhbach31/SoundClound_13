@@ -2,6 +2,7 @@ package com.example.admin.scloud.screen.main;
 
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
@@ -11,9 +12,11 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 import com.example.admin.s_cloud.R;
+import com.example.admin.scloud.screen.genre.GenreFragment;
 import com.example.admin.scloud.screen.home.HomeFragment;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener,
+        GenreFragment.OnGenreSelectedListener{
 
     private ConstraintLayout mLayoutPlaying;
     private FrameLayout mFrameLayoutContainFragment;
@@ -67,7 +70,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         getSupportFragmentManager().beginTransaction()
                 .replace(mFrameLayoutContainFragment.getId(), mHomeFragment)
-                .addToBackStack(null)
                 .commit();
     }
 
@@ -75,5 +77,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mLayoutPlaying = findViewById(R.id.constraint_playing);
         mFrameLayoutContainFragment = findViewById(R.id.frame_fragment);
         mLayoutPlaying.setOnClickListener(this);
+    }
+
+    @Override
+    public void onGenreSelected(Fragment fragment) {
+        getSupportFragmentManager().beginTransaction()
+                .replace(mFrameLayoutContainFragment.getId(), fragment)
+                .addToBackStack(null)
+                .commit();
     }
 }

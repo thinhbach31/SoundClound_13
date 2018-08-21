@@ -30,7 +30,7 @@
             android:layout_marginStart="@dimen/playing_text_marginstart"
             android:layout_marginTop="@dimen/playing_item_margintop"
             android:text="@string/title_song_name"
-            android:textColor="@color/color_black"
+            android:textColor="@color/color_white"
             android:textSize="@dimen/playing_text_size"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/playing_button_marginend"
             android:layout_marginTop="@dimen/playing_item_margintop"
-            android:background="@drawable/ic_play_arrow_black_24dp"
+            android:background="@drawable/ic_play_arrow_24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,7 +52,7 @@
             android:layout_marginEnd="@dimen/divider_marginStartEnd"
             android:layout_marginStart="@dimen/divider_marginStartEnd"
             android:layout_marginTop="@dimen/divider_marginTopBottom"
-            android:background="@color/color_material_yellow_800"
+            android:background="@color/color_white"
             app:layout_constraintEnd_toStartOf="@+id/button_main_change_state"
             app:layout_constraintHorizontal_bias="0.886"
             app:layout_constraintStart_toEndOf="@+id/text_song_name"

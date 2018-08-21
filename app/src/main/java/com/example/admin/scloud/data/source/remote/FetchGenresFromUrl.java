@@ -11,7 +11,7 @@ public class FetchGenresFromUrl extends BaseFetchTrackFromUrl {
         super(listener);
     }
 
-    @Override
+
     protected JSONObject getJsonTrack(JSONObject jsonObject) throws JSONException {
         return jsonObject.getJSONObject(Track.TrackEntity.TRACK);
     }
